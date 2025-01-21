@@ -1,0 +1,64 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"> <!-- Background Image -->
+
+    <!-- Progress Image Layer (placed before content, stays behind) -->
+    <ImageView
+        android:id="@+id/progressLayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:src="@drawable/progress_image"
+    android:scaleType="centerCrop"
+    android:contentDescription="@string/progress_layer_description"
+    android:background="@android:color/transparent" />
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Title Image -->
+        <ImageView
+            android:id="@+id/titleImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title"
+            android:contentDescription="@string/title_image"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Mango Count Text -->
+        <TextView
+            android:id="@+id/mangoCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mangos: 0"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Mango Button -->
+        <ImageButton
+            android:id="@+id/mangoButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/mango_image"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Upgrade Button -->
+        <Button
+            android:id="@+id/upgradeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy Upgrade"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</FrameLayout>

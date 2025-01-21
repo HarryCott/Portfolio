@@ -1,0 +1,7 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Image -->
+    <item android:drawable="@drawable/background_image" />
+
+    <!-- Semi-transparent Overlay -->
+    <item android:drawable="@color/semi_transparent_overlay" />
+</layer-list>
